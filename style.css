@@ -1,0 +1,122 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background: gray;
+}
+.dws-wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.email-box{
+  display: flex;
+  height: 45px;
+}
+.email-box input{
+  border: none;
+  outline: none;
+}
+.input-box{
+  background-color: #e2e1e1;
+  font-size: 14px;
+  width: 0px;
+  border-bottom: 4px solid #d2d0d0!important;
+  transition: 0.6s;
+}
+.email-box:hover> .input-box, 
+.input-box:focus{
+  width: 150px;
+  padding: 0 10px 0 20px;
+}
+.input-box::-webkit-input-placeholder{
+  opacity: 1;
+  transition: opasity 0.3s ease;
+}
+.input-box::-moz-placeholder{
+  opacity: 1;
+  transition: opasity 0.3s ease;
+}
+.input-box::-moz-placeholder{
+  opacity: 1;
+  transition: opasity 0.3s ease;
+}
+.input-box::-webkit-input-placeholder{
+  opacity: 1;
+  transition: opasity 0.3s ease;
+}
+.input-box:focus::-webkit-input-placeholder{
+  opacity: 0;
+  transition: opasity 0.3s ease;
+}
+.input-box:focus::-moz-placeholder{
+  opacity: 0;
+  transition: opasity 0.3s ease;
+}
+.input-box:focus::-moz-placeholder{
+  opacity: 0;
+  transition: opasity 0.3s ease;
+}
+.input-box:focus::-webkit-input-placeholder{
+  opacity: 0;
+  transition: opasity 0.3s ease;
+}
+.wrapper-btn{
+  position: relative;
+}
+.wrapper-btn::after{
+  content: '';
+  display: block;
+  background: #2f2e2e;
+  position: absolute;
+  width: 99%;
+  height: 5px;
+  bottom: -3px;
+  right: 1px;
+  border-radius: 0 0 5px 0;
+}
+.btn{
+  background: #383F3F;
+  color: white;
+  text-transform: uppercase;
+  padding: 0 15px;
+  border-radius: 0, 5px, 5px, 0;
+  cursor: pointer;
+  height: 45px;
+}
+.ico{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  border-radius: 5px 0 0 5px;
+  background: #242a2a;
+}
+.ico::after{
+  content: '';
+  position: absolute;
+  width: 95%;
+  height: 5px;
+  bottom: -3px;
+  left: 2px;
+  background: #041a23;
+  border-radius: 0 0 0 5px;
+}
+.ico::before{
+  content: '';
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-left: 12px solid #242a2a;
+  border-bottom: 10px solid transparent;
+  right: -11px;
+  z-index: 10;
+}
+.ico svg{
+  width: 20px;
+}
+.ico path{
+  color: white;
+}
